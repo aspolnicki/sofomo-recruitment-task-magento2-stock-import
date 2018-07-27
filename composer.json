@@ -1,0 +1,24 @@
+{
+    "name": "spolnicki/module-stocksimport",
+    "description": "Sample module for import stock data from CSV file",
+    "type": "magento2-module",
+    "license": "Beerware",
+    "authors": [
+        {
+            "name": "Andrzej Spólnicki",
+            "linkedin": "https://www.linkedin.com/in/andrzej-spolnicki"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "magento/product-community-edition": "2.2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Spolnicki\\StocksImport\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

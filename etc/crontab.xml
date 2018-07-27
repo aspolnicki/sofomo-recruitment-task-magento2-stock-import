@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+	<group id="default">
+		<job instance="Spolnicki\StocksImport\Cron\StockImport" method="execute" name="spolnicki_stocksimport_stockimport">
+			<config_path>stockimport/cron/time_expr</config_path>
+		</job>
+	</group>
+</config>

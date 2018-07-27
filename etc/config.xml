@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <stockimport>
+            <cron>
+                <enabled>0</enabled>
+                <time_expr>*/5 * * * *</time_expr>
+            </cron>
+            <sftp>
+                <host>sftp.example.com:22</host>
+                <username>demo</username>
+                <password>password</password>
+                <timeout>10</timeout>
+                <path>path/to/file.ext</path>
+            </sftp>
+            <general>
+                <reader_type>csv</reader_type>
+                <local_file_name>stocks</local_file_name>
+                <batch_size>100</batch_size>
+            </general>
+        </stockimport>
+    </default>
+</config>
